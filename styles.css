@@ -5,6 +5,7 @@
   --green: #44e4c9;
   --grey-1: #a2b3bf;
   --grey-2: #f7f7fd;
+  --grey-3: #F8F8FF;
   --white: #fff;
 
   --w-laptop: 1212px;
@@ -190,4 +191,37 @@ main {
   position: absolute;
   left: -100px;
   top: -20px;
+}
+
+.learning {
+  background-color: var(--grey-3);
+  padding-block: 80px;
+}
+
+.learning__wrapper {
+  width: var(--w-laptop);
+  margin-inline: auto;
+}
+
+.learning__subtitle {
+  margin-bottom: 4px;
+  color: var(--brand);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.learning__title {
+  width: 55%;
+  font-weight: 700;
+  font-size: 44px;
+  text-wrap: balance;
+  margin-bottom: 16px;
+}
+
+.learning__desc {
+  width: 40%;
+  text-wrap: balance;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 60px;
 }
