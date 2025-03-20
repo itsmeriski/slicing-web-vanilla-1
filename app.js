@@ -42,6 +42,13 @@ const contentCompany = [
   { image: "images/redis.png", alt: "redis logo" },
 ];
 
+const contentTestimonial = [
+  { image: "images/avatar (1).png", name: "Jason Todd", job: "Entrepreneur" },
+  { image: "images/avatar (2).png", name: "Cassandra K", job: "Web Developer" },
+  { image: "images/avatar (3).png", name: "Peter Parker", job: "PHP Enthusiast" },
+  { image: "images/avatar (4).png", name: "Jean Gray", job: "Designer" },
+];
+
 const learningCards = document.getElementsByClassName("learning__cards");
 
 if (learningCards) {
@@ -90,5 +97,23 @@ if (companyLists) {
     list.innerHTML = `<img src="${contentCompany[i].image}" alt="${contentCompany[i].alt}"/>`;
 
     companyLists[0].appendChild(list);
+  }
+}
+
+const testimonialCards = document.getElementsByClassName("testimonial__cards");
+
+if (testimonialCards) {
+  for (let i = 0; i < contentTestimonial.length; i++) {
+    const card = document.createElement("div");
+    card.className = "testimonial__card";
+
+    card.innerHTML = `
+        <img src="${contentTestimonial[i].image}" alt="sebuah foto profile" class="testimonial__image" />
+        <h3 class="testimonial__username">${contentTestimonial[i].name}</h3>
+        <p class="testimonial__job">${contentTestimonial[i].job}</p>
+        <blockquote class="testimonial__quote"> <p>“The mentor is cool, how to convey each material is also detailed and easy to understand.. </p> </blockquote>
+    `;
+
+    testimonialCards[0].appendChild(card);
   }
 }

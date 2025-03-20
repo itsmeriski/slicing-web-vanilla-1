@@ -6,6 +6,7 @@
   --grey-1: #a2b3bf;
   --grey-2: #f7f7fd;
   --grey-3: #f8f8ff;
+  --grey-4: #BAB8D2;
   --white: #fff;
 
   --w-laptop: 1212px;
@@ -157,7 +158,7 @@ main {
 .hero__desc {
   margin-bottom: 40px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .hero__group-cta {
@@ -379,4 +380,74 @@ main {
 
 .company__partner-list {
   list-style: none;
+}
+
+.testimonial {
+  padding-block: 80px;
+}
+
+.testimonial__wrapper {
+  width: var(--w-laptop);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial__title {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--brand);
+  margin-bottom: 4px;
+}
+
+.testimonial__subtitle {
+  font-weight: 800;
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+
+.testimonial__desc {
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.testimonial__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial__card {
+  width: min(100%, 240px);
+  background-color: var(--white);
+  padding-inline: 24px;
+  padding-block: 0 48px;
+  border: 1px solid var(--brand);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial__image {
+  position: relative;
+  top: -40px;
+}
+
+.testimonial__username {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.testimonial__job {
+  font-size: 15px;
+  color: var(--grey-4);
+  margin-bottom: 30px;
+}
+
+.testimonial__quote > p {
+  font-size: 17px;
+  text-align: center;
 }
