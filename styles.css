@@ -372,6 +372,7 @@ main {
 }
 
 .company__our-partner {
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
   gap: 70px;
