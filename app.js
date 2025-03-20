@@ -26,15 +26,20 @@ const contentLearningCards = [
 ];
 
 const contentAboutLists = [
-  {
-    desc: "Study and produce creation to get a job",
-  },
-  {
-    desc: "Up to date material and created by expert creators",
-  },
-  {
-    desc: "Complete classes and projects and get a certificate from us",
-  },
+  { desc: "Study and produce creation to get a job" },
+  { desc: "Up to date material and created by expert creators" },
+  { desc: "Complete classes and projects and get a certificate from us" },
+];
+
+const contentCompany = [
+  { image: "images/Amazon.png", alt: "amazon logo" },
+  { image: "images/Github.png", alt: "Github logo" },
+  { image: "images/Linkedin.png", alt: "Linkedin logo" },
+  { image: "images/Medium.png", alt: "Medium logo" },
+  { image: "images/Microsoft.png", alt: "Microsoft logo" },
+  { image: "images/paypal.png", alt: "paypal logo" },
+  { image: "images/Reddit.png", alt: "Reddit logo" },
+  { image: "images/redis.png", alt: "redis logo" },
 ];
 
 const learningCards = document.getElementsByClassName("learning__cards");
@@ -72,5 +77,18 @@ if (aboutLists) {
     `;
 
     aboutLists[0].appendChild(list);
+  }
+}
+
+const companyLists = document.getElementsByClassName("company__our-partner");
+
+if (companyLists) {
+  for (let i = 0; i < contentCompany.length; i++) {
+    const list = document.createElement("li");
+    list.className = "company__partner-list";
+
+    list.innerHTML = `<img src="${contentCompany[i].image}" alt="${contentCompany[i].alt}"/>`;
+
+    companyLists[0].appendChild(list);
   }
 }
