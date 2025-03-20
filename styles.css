@@ -5,7 +5,7 @@
   --green: #44e4c9;
   --grey-1: #a2b3bf;
   --grey-2: #f7f7fd;
-  --grey-3: #F8F8FF;
+  --grey-3: #f8f8ff;
   --white: #fff;
 
   --w-laptop: 1212px;
@@ -19,7 +19,7 @@
 
 html,
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: var(--white);
   color: var(--black);
 }
@@ -42,6 +42,14 @@ main {
   all: unset;
   cursor: pointer;
   user-select: none;
+}
+
+.btn--small {
+  padding-inline: 58px;
+  border-radius: 6px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .btn--normal {
@@ -224,4 +232,48 @@ main {
   font-weight: 500;
   font-size: 22px;
   margin-bottom: 60px;
+}
+
+.learning__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.learning__card {
+  width: min(100%, 250px);
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.learning__card > .btn {
+  align-self: stretch;
+  text-align: center;
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.learning__card > .btn:hover {
+  background-color: var(--white);
+  color: var(--green);
+  outline: 1px solid var(--green);
+}
+
+:is(.learning__card-image, .learning__card-desc) {
+  margin-bottom: 30px;
+}
+
+.learning__card-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.learning__card-desc {
+  font-size: 14px;
 }
