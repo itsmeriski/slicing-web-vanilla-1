@@ -277,3 +277,70 @@ main {
 .learning__card-desc {
   font-size: 14px;
 }
+
+.about-us {
+  padding-block: 80px;
+}
+
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: var(--w-laptop);
+  margin-inline: auto;
+}
+
+.about-us__image {
+  width: 600px;
+  position: relative;
+}
+
+.about-us__image > img:last-child {
+  position: absolute;
+  bottom: -140px;
+  right: 0;
+}
+
+.about-us__content {
+  width: 470px;
+}
+
+.about-us__subtitle {
+  color: var(--brand);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.about-us__title {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-us__desc {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.about-us__lists {
+  width: 80%;
+}
+
+.about-us__list {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.about-us__list > svg {
+  flex: 1 0 auto;
+}
+
+.about-us__list-desc {
+  font-weight: 600;
+  font-size: 20px;
+}
