@@ -421,7 +421,7 @@ main {
 .testimonial__card {
   width: min(100%, 240px);
   background-color: var(--white);
-  padding-inline: 24px;
+  padding-inline: 22px;
   padding-block: 0 48px;
   border: 1px solid var(--brand);
   border-radius: 10px;
@@ -450,4 +450,5 @@ main {
 .testimonial__quote > p {
   font-size: 17px;
   text-align: center;
+  text-wrap: balance;
 }
