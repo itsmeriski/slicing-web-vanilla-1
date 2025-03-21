@@ -60,7 +60,6 @@ function createdIterationElement(parent, dataArray, elementType, className, temp
   });
 }
 
-
 createdIterationElement(
   document.getElementsByClassName("learning__cards"),
   contentLearningCards,

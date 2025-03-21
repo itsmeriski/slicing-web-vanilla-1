@@ -453,3 +453,36 @@ main {
   text-align: center;
   text-wrap: balance;
 }
+
+.get-started {
+  background-image: linear-gradient(hsl(0deg, 0%, 0%, 0.55), hsl(0deg, 0%, 0%, 0.55)), url(images/bg.png);
+  height: 382px;
+}
+
+.get-started__wrapper {
+  width: var(--w-laptop);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+}
+
+.get-started__title {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 44px;
+  margin-bottom: 16px;
+}
+
+.get-started__desc {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.get-started__group-cta > .btn:last-child {
+  color: var(--white);
+}
