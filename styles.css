@@ -6,7 +6,7 @@
   --grey-1: #a2b3bf;
   --grey-2: #f7f7fd;
   --grey-3: #f8f8ff;
-  --grey-4: #BAB8D2;
+  --grey-4: #bab8d2;
   --white: #fff;
 
   --w-laptop: 1212px;
@@ -455,7 +455,11 @@ main {
 }
 
 .get-started {
-  background-image: linear-gradient(hsl(0deg, 0%, 0%, 0.55), hsl(0deg, 0%, 0%, 0.55)), url(images/bg.png);
+  background-image: linear-gradient(
+      hsl(0deg, 0%, 0%, 0.55),
+      hsl(0deg, 0%, 0%, 0.55)
+    ),
+    url(images/bg.png);
   height: 382px;
 }
 
