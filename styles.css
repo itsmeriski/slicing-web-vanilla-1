@@ -490,3 +490,76 @@ main {
 .get-started__group-cta > .btn:last-child {
   color: var(--white);
 }
+
+.footer {
+  padding-block: 80px;
+}
+
+.footer__wrapper {
+  width: var(--w-laptop);
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content {
+  flex: 1 0 420px;
+}
+
+.footer__logo {
+  margin-bottom: 40px;
+}
+
+.footer__desc {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.footer__informations {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 75px;
+}
+
+.footer__information {
+  flex-shrink: 0;
+  flex-basis: 140px;
+}
+
+.footer__information-title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.footer__lists {
+  display: flex;
+  row-gap: 20px;
+  flex-direction: column;
+}
+
+.footer__list {
+  list-style: none;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.footer__contact {
+  display: flex;
+  align-content: center;
+  column-gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer__contact > a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--brand);
+}
+
+.footer__information-address {
+  font-weight: 500;
+  font-size: 22px;
+}
