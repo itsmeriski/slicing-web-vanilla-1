@@ -45,21 +45,11 @@ const contentCompany = [
 const contentTestimonial = [
   { image: "images/avatar (1).png", name: "Jason Todd", job: "Entrepreneur" },
   { image: "images/avatar (2).png", name: "Cassandra K", job: "Web Developer" },
-  {
-    image: "images/avatar (3).png",
-    name: "Peter Parker",
-    job: "PHP Enthusiast",
-  },
+  { image: "images/avatar (3).png", name: "Peter Parker", job: "PHP Enthusiast", },
   { image: "images/avatar (4).png", name: "Jean Gray", job: "Designer" },
 ];
 
-function createdIterationElement(
-  parent,
-  dataArray,
-  elementType,
-  className,
-  templateCallback
-) {
+function createdIterationElement(parent, dataArray, elementType, className, templateCallback) {
   if (!parent || dataArray.length === 0) return;
 
   dataArray.forEach((item) => {
